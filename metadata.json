@@ -1,0 +1,10 @@
+{
+  "uuid": "hide-universal-access@akiirui.github.io",
+  "name": "Hide Universal Access",
+  "description": "Hide Universal Access icon from the status bar",
+  "url": "https://github.com/akiirui/hide-universal-access",
+  "version": 3,
+  "shell-version": [
+    "3.34"
+  ]
+}
