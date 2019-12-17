@@ -23,14 +23,14 @@ class Extension {
     enable() {
         let a11y = Main.panel.statusArea['a11y'];
         if (a11y != null) {
-            a11y.hide();
+            a11y.container.hide();
         }
     }
 
     disable() {
         let a11y = Main.panel.statusArea['a11y'];
         if (a11y != null) {
-            a11y.show();
+            a11y.container.show();
         }
     }
 }
