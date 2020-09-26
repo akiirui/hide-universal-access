@@ -20,21 +20,21 @@
 const Main = imports.ui.main;
 
 class Extension {
-    enable() {
-        let a11y = Main.panel.statusArea['a11y'];
-        if (a11y != null) {
-            a11y.container.hide();
-        }
+  enable() {
+    let a11y = Main.panel.statusArea["a11y"];
+    if (a11y != null) {
+      a11y.container.hide();
     }
+  }
 
-    disable() {
-        let a11y = Main.panel.statusArea['a11y'];
-        if (a11y != null) {
-            a11y.container.show();
-        }
+  disable() {
+    let a11y = Main.panel.statusArea["a11y"];
+    if (a11y != null) {
+      a11y.container.show();
     }
+  }
 }
 
 function init() {
-    return new Extension();
+  return new Extension();
 }
