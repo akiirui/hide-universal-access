@@ -3,6 +3,5 @@
   "name": "Hide Universal Access",
   "description": "Hide Universal Access icon from the status bar",
   "url": "https://github.com/akiirui/hide-universal-access",
-  "version": 8,
   "shell-version": ["3.34", "3.36", "3.38", "40"]
 }
