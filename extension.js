@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import panel from "resource:///org/gnome/shell/ui/main.js";
+import { panel } from "resource:///org/gnome/shell/ui/main.js";
 
 export default class HideUniversalAccess {
   enable() {
