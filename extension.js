@@ -17,24 +17,20 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-const Main = imports.ui.main;
+import panel from "resource:///org/gnome/shell/ui/main.js";
 
-class Extension {
+export default class Extension {
   enable() {
-    let a11y = Main.panel.statusArea["a11y"];
+    let a11y = panel.statusArea["a11y"];
     if (a11y != null) {
       a11y.container.hide();
     }
   }
 
   disable() {
-    let a11y = Main.panel.statusArea["a11y"];
+    let a11y = panel.statusArea["a11y"];
     if (a11y != null) {
       a11y.container.show();
     }
   }
-}
-
-function init() {
-  return new Extension();
 }
