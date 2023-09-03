@@ -19,7 +19,7 @@
 
 import panel from "resource:///org/gnome/shell/ui/main.js";
 
-export default class Extension {
+export default class HideUniversalAccess {
   enable() {
     let a11y = panel.statusArea["a11y"];
     if (a11y != null) {
