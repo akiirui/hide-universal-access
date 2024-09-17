@@ -15,11 +15,14 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
 import { panel } from "resource:///org/gnome/shell/ui/main.js";
 
-export default class HideUniversalAccess {
+export default class HideUniversalAccess extends Extension {
   enable() {
     let a11y = panel.statusArea["a11y"];
     if (a11y != null) {
